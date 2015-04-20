@@ -2,10 +2,10 @@
 A simple bower package, which can be easily used by frontend-template.
 
 # Installation
-Make sure you have a .bowerrc file containing:
+If using a typical frontend-template, make sure you have a .bowerrc file containing:
 ```javascript
 {
-  "directory": ""
+  "directory": "src/bower_components"
 }
 ```
 
@@ -21,3 +21,8 @@ Note: The --save flag adds it to your bower.json dependencies.
 The file structure mirrors that of the frontend-template, but doesn't include any compiled CSS.
 
 # Usage
+```shell
+bower install [package name]
+```
+
+This will install the package and dependencies into /src/bower_components, actually making use of the Sass/JS is a different story..
